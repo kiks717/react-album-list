@@ -30,6 +30,7 @@ const Paginate = () => {
     const currentPhotos = photos.slice(indexOfFirstPhoto, indexOfLastPhoto)
 
 
+
     return (
     <div>
       <PaginatePost photos={currentPhotos} loading={loading}/>
@@ -37,7 +38,9 @@ const Paginate = () => {
       photosPerPage={photosPerPage} 
       totalPhotos={photos.length}
       paginate={paginate}
-      handleClick={handleClick}/>
+      handleClick={handleClick}
+
+      />
     </div>
   )
 }
