@@ -1,0 +1,17 @@
+.photoBox{
+ text-align: center;
+ border: 1px solid var(--font-alt);
+ padding: 0.5rem;
+}
+.photoContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 0.7rem 1rem;
+    border: 2px solid var(--light-olive);
+}

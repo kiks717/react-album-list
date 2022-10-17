@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+body {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+:root{
+  --dark-golden: #dda120;
+  --light-golden: #ffb703;
+  --dark-olive:  #283618;
+  --light-olive:#606c38;
+  --black-color: #010101;
+  --font-base: #fefae0;
+  --font-alt:#faedcd;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cormorant Garamond', serif;
+
+}
+html{
+  font-size: 1.2rem;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: var(--black-color);
+}

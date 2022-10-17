@@ -1,0 +1,45 @@
+
+.albumTitle{
+    text-transform: capitalize;
+}
+.span {
+    display: flex;
+    justify-content: center;
+    color: var(--font-alt);
+    background-color: var(--light-olive);
+    padding: 0.3rem;
+    border: 1px solid var(--light-olive);
+    border-radius: 12px;
+    margin-top: 0.7rem;
+}
+.albumWrapper{
+    border: 1px solid var(--dark-olive);
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--font-alt);
+    margin: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+}
+.albumContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.albumFetch{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--dark-olive);
+    border-radius: 20px;
+}

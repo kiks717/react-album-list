@@ -1,0 +1,19 @@
+.paginationContainer{
+    display: flex;
+}
+.paginationContainer li{
+    padding: 10px;
+    border: 1px solid var(--light-olive);
+    cursor: pointer;
+    list-style: none;
+}
+.paginationContainer li:active{
+    background-color: var(--font-alt);
+    color: goldenrod;
+}
+.pagiList{
+    list-style: none;
+    border: 1px solid var(--dark-olive);
+    padding: 0.3rem;
+    margin-top: 10px;
+}

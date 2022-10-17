@@ -1,0 +1,23 @@
+.header{
+    color: var(--font-base);
+    font-size: 2rem;
+}
+.headerDiv{
+    padding: 1.2rem 1rem;
+    background-color: var(--dark-olive);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.headerButton{
+    width: 200px;
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid var(--dark-golden);
+    background-color: var(--font-base);
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 1rem;
+}
