@@ -17,7 +17,6 @@ root.render(
         <Route path='albums/:id' element={<Layout>
           <AlbumPost/>
         </Layout>}/>
-
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -3,7 +3,7 @@ import classes from './Pagination.module.css'
 import useFetch from '../../components/useFetch';
 import { useParams } from 'react-router-dom';
 const Pagination = ({photosPerPage, totalPhotos,handleClick}) => {
-  const [limitPageNumber, setLimitPageNumber] = useState(5)
+  const [limitPageNumber] = useState(5)
   const [maxPageNumberLimit, setmaxPageNumberLimit] = useState(7)
   const [minPageNumberLimit, setminPageNumberLimit] = useState(0)
   const [currentPhoto, setCurrentPhoto] = useState(1)

@@ -1,17 +1,25 @@
 .photoBox{
  text-align: center;
- border: 1px solid var(--font-alt);
  padding: 0.5rem;
+ margin: 0;
+}
+.photoBox img{
+    cursor: pointer;
+    /* margin-left: 1rem; */
+
 }
 .photoContainer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 2.5rem;
-    padding: 0.7rem 1rem;
+    padding: 2rem 1.2rem;
     border: 2px solid var(--light-olive);
+    padding-bottom: 0;
+    box-sizing: border-box;
+}
+.openImage{
+    width: 100%;
+    height: 300px;
 }
