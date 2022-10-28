@@ -16,9 +16,15 @@ const PopUpImage = ({photos}) => {
     setOpenModal(false)
   }
   const nextSlide = () => {
-    slideNumber === 0 ? setSlideNumber(photos.length -1) : setSlideNumber(slideNumber - 1)
+     slideNumber + 1 === photos.length ?
+     setSlideNumber(0) : 
+     setSlideNumber(slideNumber + 1)
   }
   const prevSlide = () => {
+      slideNumber === 0 ?
+      setSlideNumber(photos.length -1) :
+      setSlideNumber(slideNumber - 1)
+
   }
   return (
     <div className={classes.modal}>
@@ -36,7 +42,10 @@ const PopUpImage = ({photos}) => {
           alt={photos.title}
           />
         </div>
-
+        <br/>
+        slide number : {slideNumber}
+        <br/>
+        total slides : {photos.length}
         <div className={classes.sliderWrap}>
         <AiOutlineArrowLeft
                 onClick={prevSlide}
