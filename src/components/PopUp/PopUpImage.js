@@ -6,6 +6,7 @@ import {AiOutlineArrowRight} from 'react-icons/ai'
 const PopUpImage = ({photos}) => {
   const [slideNumber,setSlideNumber] = useState(0)
   const [openModal,setOpenModal] = useState(false)
+  const [column, setColumn] = useState(classes.card)
 
   const handleOpenModal = (index) => {
     setSlideNumber(index)
@@ -24,11 +25,22 @@ const PopUpImage = ({photos}) => {
       slideNumber === 0 ?
       setSlideNumber(photos.length -1) :
       setSlideNumber(slideNumber - 1)
-
   }
+  const twoColumn = classes.card
+  const threeColumn = classes.column3
+  const fourColumn = classes.column4
+  
+  const ColumnDiv = () => (
+    <div className={classes.buttons}>
+    <button onClick={() => setColumn(twoColumn)}>2</button>
+    <button onClick={() => setColumn(threeColumn)}>3</button>
+    <button onClick={() => setColumn(fourColumn)}>4</button>
+  </div>
+  )
+
   return (
     <div className={classes.modal}>
-
+      {!openModal && <ColumnDiv/>}
       {openModal &&  
       <div>
         <button 
@@ -38,6 +50,7 @@ const PopUpImage = ({photos}) => {
       </button>
         <div className={classes.fullScreen}>
           <img 
+          key={photos}
           src={photos[slideNumber].url} 
           alt={photos.title}
           />
@@ -55,11 +68,13 @@ const PopUpImage = ({photos}) => {
                 className={classes.btnNext}/> 
         </div>
         </div>}
-          <div className={classes.galleryWrap}>
+          <div className={column}>
          {handleOpenModal &&
                   photos && 
                   photos.map((slide,index) => {
                     return (
+                      <>
+
                       <div
                        className={classes.single} 
                        key={photos.id}
@@ -70,10 +85,12 @@ const PopUpImage = ({photos}) => {
                         alt={slide.title}/>
                         <p>{slide.title}</p>
                       </div>
+                      </>
                     )
                   })} 
 
     </div>
+
     </div>
 
   )
