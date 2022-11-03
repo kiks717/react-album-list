@@ -1,7 +1,8 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import PaginatePost from './PaginatePost'
+// import PaginatePost from './PaginatePost'
 import Pagination from './Pagination'
+import PaginatePost from './PaginatePost/PaginatePost'
 
 const Paginate = () => {
     const [photos,setPhotos] = useState([])
